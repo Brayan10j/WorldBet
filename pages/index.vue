@@ -1,5 +1,5 @@
 <template>
-  <UContainer class="container">
+  <UContainer class=" items-center h-screen justify-center flex bg-slate-50">
     <div class="content">
       <h1 class="title">Choose White or Black</h1>
       <div class="buttons">
@@ -7,7 +7,7 @@
         <UButton color="black" variant="solid" @click="choose('black')" class="button">Black</UButton>
       </div>
       <p v-if="result" class="result">{{ result }}</p>
-      <p class="score">Score: {{ score }}</p>
+      <p class="text-red-600">Score: {{ score }}</p>
     </div>
   </UContainer>
 </template>
@@ -33,13 +33,6 @@ function choose(playerChoice) {
 </script>
 
 <style scoped>
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f5f5f5;
-}
 
 .content {
   text-align: center;
